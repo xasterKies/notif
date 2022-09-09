@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-
+// Severity constants
 const (
 	SeverityLow = iota
 	SeverityNormal
@@ -14,12 +14,14 @@ const (
 
 type Severity int
 
+// Notification schema
 type Notify struct {
 	title string
 	message string
 	severity Severity
 }
 
+// Initialize a new notifcation
 func New(title, message string, severity Severity) *Notify {
 	return &Notify{
 		title:	title,
@@ -28,6 +30,7 @@ func New(title, message string, severity Severity) *Notify {
 	}
 }
 
+// Determines each notification severity string
 func (s Severity) String() string {
 	sev := "low"
 

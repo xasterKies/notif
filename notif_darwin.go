@@ -1,8 +1,11 @@
 package notif
 
+import "os/exec"
+
 
 var command = exec.Command
 
+// Send notification function for MacOs
 func(n *Notify) Send() error {
 	notifCmdName := "terminal-notifier"
 
