@@ -4,14 +4,15 @@ import "os/exec"
 
 var command = exec.Command
 
+// Send notification function for linux system
 func (n *Notify) Send() error {
-	notifyCmdName := "notify-send"
+	notifCmdName := "notify-send"
 
-	notifyCmd, err := exec.LookPath(notifyCmdName)
+	notifCmd, err := exec.LookPath(notifCmdName)
 	if err != nil {
 		return err
 	}
 
-	notifyCommand := command(notifyCmd, "-u", n.severity.String(), n.title, n.message)
-	return notifyCommand.Run()
+	notifCommand := command(notifCmd, "-u", n.severity.String(), n.title, n.message)
+	return notifCommand.Run()
 }
