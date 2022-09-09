@@ -14,13 +14,13 @@ func (n *Notify) Send() error {
 	// Powershell notification script - It is loosely based on the BaloonTip script
 	// developed by Boe Prox
 	psscript := fmt.Sprintf(`Add-Type -AssemblyName System.Windows.Forms
-	$notif = New-Object System.Windows.Forms.NotifyIcon
-	$notif.Icon = [System.Drawing.SystemIcons]::Information
-	$notif.BalloonTipIcon = %q
-	$notif.BalloonTipTitle = %q
-	$notif.BalloonTipText = %q
-	$notif.Visible = $True
-	$notif.ShowBalloonTip(10000)`,
+	$notify = New-Object System.Windows.Forms.NotifyIcon
+	$notify.Icon = [System.Drawing.SystemIcons]::Information
+	$notify.BalloonTipIcon = %q
+	$notify.BalloonTipTitle = %q
+	$notify.BalloonTipText = %q
+	$notify.Visible = $True
+	$notify.ShowBalloonTip(10000)`,
 	n.severity, n.title, n.message,
 	)
 
