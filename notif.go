@@ -1,5 +1,10 @@
 package notif
 
+import (
+	"runtime"
+	"strings"
+)
+
 
 const (
 	SeverityLow = iota
@@ -22,3 +27,34 @@ func New(title, message string, severity Severity) *Notify {
 		severity: severity,
 	}
 }
+
+func (s Severity) String() string {
+	sev := "low"
+
+	switch s {
+	case SeverityLow:
+		sev = "low"
+	case SeverityNormal:
+		sev = "normal"
+	case SeverityUrgent:
+		sev = "critical"
+	}
+
+	if runtime.GOOS == "darwin" {
+		sev = strings.Title(sev)
+	}
+
+	if runtime.GOOS == "windows" {
+		switch s {
+		case SeverityLow:
+			sev = "Info"
+		case SeverityNormal:
+			sev = "Warning"
+		case SeverityUrgent:
+			sev = "Error"
+		}
+	}
+	
+	return sev
+}
+
