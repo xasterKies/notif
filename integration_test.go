@@ -6,6 +6,7 @@ import (
 	"github.com/xasterKies/notif"
 )
 
+// Simulating a send notification with TestSend integration test
 func TestSend(t *testing.T) {
 	n := notif.New("test title", "test msg", notif.SeverityNormal)
 

@@ -9,6 +9,7 @@ import (
 	"testing"
 )
 
+// Test for newly created notifications
 func TestNew(t *testing.T) {
 	testCases := []struct {
 		s Severity
@@ -81,6 +82,7 @@ func mockCmd(exe string, args ...string) *exec.Cmd {
 	return cmd
 }
 
+// Test for the helper process
 func TestHelperProcess(t *testing.T) {
 	if os.Getenv("GO_WANT_HELPER_PROCESS") != "1" {
 		return
@@ -104,6 +106,7 @@ func TestHelperProcess(t *testing.T) {
 	os.Exit(1)
 }
 
+// Test notification send
 func TestSend(t *testing.T) {
 	n := New("test title", "test msg", SeverityNormal)
 
