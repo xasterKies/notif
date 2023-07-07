@@ -1,5 +1,4 @@
 # notif
-===
 
 > A simple and pluggable system notification package for Go.
 
@@ -10,47 +9,42 @@
 ![Alt text](./notif-test-linux.png "notif")
 
 ### Why?
-===
 
 I started building this because of a personal project I am currently working on. I just needed a simple way to display system notifications in the operating system and all the other open source projects I stumbled on were a little too cumbersome for my needs. For a bit I started including this as one of the modules of the project but later on decided to make it a package so I could easily reuse.
 
 
-## Features
-===
+### Features
 
 - Easy display of system notifications compatible with Linux, Mac & Windows, all available and reusable withen the flow of your program.
 - Easy to understand, making the package API easily customizable and extensible to fit your own need.
 - End-to-end tested package and can be used in a production enviroment.
 
 
-## API
-===
+### API
+
 A sample notification will need to fufill a few attributes: a `title`, a `message` and `severity` where severity provides how severe or urgent your notification is to be interpreted by the operating system. An example of a notification schema looks like this:
 
-    ```go
-        // Notification schema
-        type Notify struct {
-            title string
-            message string
-            severity Severity
-        }
-    ```
+ ```
+    // Notification schema
+    type Notify struct {
+        title string
+        message string
+        severity Severity
+    }
+```
 
-## TODO
-===
+### TODO
  - [ ] Dockerize the package
  - [ ] Setup a CI pipeline
  - [ ] Distribute the package on the go package manager `go get`
 
 
 ### Dependencies and Installs
-===
 
 - Golang v1.20
   - Install go for [linux/mac/windows](https://go.dev/doc/install)
 
-## Setting up the Project
-===
+### Setting up the Project
 
 1. Fork repository
 
@@ -73,7 +67,6 @@ A sample notification will need to fufill a few attributes: a `title`, a `messag
    ```
 
 ### Running the project
-===
 
 1. Install library dependencies
 
@@ -95,6 +88,6 @@ A sample notification will need to fufill a few attributes: a `title`, a `messag
 
 
 ### Contributing
-===
+
 if you will like to make a contribution or suggest anything to the project,will be happy to hear from you in issues or PRs section :)    
 
