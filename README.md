@@ -39,6 +39,7 @@ A sample notification will need to fufill a few attributes: a `title`, a `messag
 ## TODO
 ===
  - [ ] Dockerize the package
+ - [ ] Setup a CI pipeline
  - [ ] Distribute the package on the go package manager `go get`
 
 
