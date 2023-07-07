@@ -83,7 +83,7 @@ A sample notification will need to fufill a few attributes: a `title`, a `messag
 3. Run
 
     ```bash
-   go run main.go
+   go run notif.go
    ```
 
 
