@@ -1,4 +1,4 @@
-# notif 💬
+# 💬 notif
 
 > A simple and pluggable system notification package for Go.
 
