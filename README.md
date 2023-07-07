@@ -60,12 +60,6 @@ A sample notification will need to fufill a few attributes: a `title`, a `messag
    cd notif
    ```
 
-4. Initialize project
-
-   ```bash
-   git init
-   ```
-
 ### Running the project
 
 1. Install library dependencies
