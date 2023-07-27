@@ -10,7 +10,7 @@
 
 ### Why?
 
-I started building this because of a personal project I am currently working on. I just needed a simple way to display system notifications in the operating system and all the other open source projects I stumbled on were a little too cumbersome for my needs. For a bit I started including this as one of the modules of the project but later on decided to make it a package so I could easily reuse.
+I started building this because of a project I am working on. I just needed a simple way to display system notifications in the operating system and all the other open source projects I stumbled on were a little too cumbersome for my needs. For a bit I started including this as one of the modules of the project but later on decided to make it a package so I could easily reuse.
 
 
 ### Features
