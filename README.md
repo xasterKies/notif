@@ -1,6 +1,6 @@
 # 💬 notif
 
-> A simple standalone pluggable system notification package for Go. - A simple way to add system notifications to your Go project.
+> A simple standalone and pluggable system notification library for your Go projects. - A simple way to add system notifications to your Go project.
 
 ![most language](https://img.shields.io/github/languages/top/xasterKies/notif?color=blue&style=for-the-badge)
 ![stars](https://img.shields.io/github/stars/xasterKies/notif?color=blue&style=for-the-badge)
